@@ -1,8 +1,8 @@
+BEGIN;
 CREATE TABLE IF NOT EXISTS asset_type_water_device_storage (
     id smallint PRIMARY KEY,
     description varchar NOT NULL
 );
-
 INSERT INTO asset_type_water_device_storage
     VALUES (0, 'Unknown'),
     (1, 'Hydropneumatic tank'),
@@ -11,4 +11,5 @@ INSERT INTO asset_type_water_device_storage
     (4, 'Storage tank'),
     (5, 'Surge tank'),
     (6, 'Tower');
+COMMIT;
 
